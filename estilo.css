@@ -50,10 +50,11 @@ body {
     color: #2c3e50;
 }
 
-.logo i {
-    margin-right: 10px;
-    color: #e74c3c;
-    font-size: 1.8rem;
+.logo img {
+    width: 30%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu {
@@ -71,7 +72,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #e74c3c;
+    color: #00357A;
 }
 
 .nav-menu a::after {
@@ -81,7 +82,7 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #e74c3c;
+    background-color: #00357A;
     transition: width 0.3s ease;
 }
 
@@ -108,9 +109,10 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: #00357A;
     color: white;
-    padding: 100px 20px 50px;
+    text-align: center;
+    justify-content: center;
 }
 
 .hero-content {
@@ -135,6 +137,7 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -150,14 +153,14 @@ body {
 }
 
 .btn-primary {
-    background: #e74c3c;
+    background: black;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #c0392b;
+    background: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+    color: black;
 }
 
 .btn-secondary {
@@ -255,7 +258,7 @@ body {
 .servicio-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background-color:#00357A;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -367,7 +370,7 @@ body {
 .contacto-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background-color: #00357A;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -423,7 +426,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #e74c3c;
+    border-color: #00357A;
 }
 
 .form-group textarea {
@@ -445,22 +448,22 @@ body {
 
 /* Footer */
 .footer {
-    background: #2c3e50;
+    background: #00357A;
     color: white;
     padding: 3rem 0 1rem;
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    gap: 15rem;
     margin-bottom: 2rem;
+    justify-content: center;
 }
 
 .footer-section h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #e74c3c;
+    color: white;
 }
 
 .footer-section ul {
@@ -479,18 +482,19 @@ body {
 
 .footer-section p i {
     margin-right: 10px;
-    color: #e74c3c;
+    color: white;
 }
 
 .social-links {
     display: flex;
     gap: 1rem;
+    font-size: 30px;
 }
 
 .social-links a {
     width: 40px;
     height: 40px;
-    background: #e74c3c;
+    background: #00357A;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -659,11 +663,359 @@ html {
     }
 }
 
-/* Estilos para elementos enfocados */
-button:focus,
-input:focus,
-textarea:focus,
-a:focus {
-    outline: 2px solid #e74c3c;
-    outline-offset: 2px;
+/* Estilos específicos para página Nosotros */
+.hero-nosotros {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background-color: #00357A;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 120px 20px 50px;
 }
+
+.hero-nosotros h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-nosotros p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.nav-menu a.active {
+    color: #00357A;
+    font-weight: 600;
+}
+
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+    padding: 80px 0;
+    background: white;
+}
+
+.sobre-nosotros h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.sobre-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.sobre-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.valores h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.valor-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.valor-item:hover {
+    transform: translateY(-5px);
+}
+
+.valor-item i {
+    font-size: 2rem;
+    color: #00357A;
+    margin-bottom: 1rem;
+}
+
+.valor-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.valor-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Sección Misión y Visión */
+.mision-vision {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.mision-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.mision, .vision {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mision:hover, .vision:hover {
+    transform: translateY(-10px);
+}
+
+.mision .icono, .vision .icono {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #00357A, #0056b3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+}
+
+.mision .icono i, .vision .icono i {
+    font-size: 2rem;
+    color: white;
+}
+
+.mision h3, .vision h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.mision p, .vision p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Sección Equipo */
+.equipo {
+    padding: 80px 0;
+    background: white;
+}
+
+.equipo h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.equipo-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.miembro-equipo {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.miembro-equipo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.foto-miembro {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #00357A;
+}
+
+.foto-miembro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.miembro-equipo h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.cargo {
+    font-weight: 600;
+    color: #00357A;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.descripcion {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.especialidades span {
+    background: #f8f9fa;
+    color: #00357A;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid #e0e0e0;
+}
+
+/* Sección Estadísticas */
+.estadisticas {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #00357A, #0056b3);
+    color: white;
+}
+
+.estadisticas h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Responsive para página Nosotros */
+@media (max-width: 768px) {
+    .hero-nosotros h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-nosotros p {
+        font-size: 1.1rem;
+    }
+    
+    .sobre-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mision-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .mision, .vision {
+        padding: 2rem;
+    }
+    
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-nosotros h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-nosotros p {
+        font-size: 1rem;
+    }
+    
+    .mision, .vision {
+        padding: 1.5rem;
+    }
+    
+    .miembro-equipo {
+        padding: 1.5rem;
+    }
+    
+    .foto-miembro {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
